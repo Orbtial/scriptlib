@@ -12,6 +12,6 @@ setuptools.setup(
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: Mac OSX High Sierra 10.13",
+        "Operating System :: MacOS :: MacOS X",
     )
     )
