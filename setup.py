@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='scriptlib',
-    version='1.0',
+    version='1.0.1',
     description='A collection of functions for easy terminal application development',
     url='https://github.com/Orbtial/scriptlib',
     author='Orbtial',

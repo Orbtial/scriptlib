@@ -19,7 +19,7 @@ def loadJson(ptpdir, path, filename):
 	:param filename: String representing name of .json file.
 	:returns: Dictionary representing data from specified file.
 	"""
-	return json.loads(brickfile.rFileData(ptpdir, path, filename))
+	return json.loads(scriptfile.rFileData(ptpdir, path, filename))
 
 def writeJson(ptpdir, path, filename, dictionary):
 	"""
@@ -30,4 +30,4 @@ def writeJson(ptpdir, path, filename, dictionary):
 	:param filename: String representing name of .json file.
 	:param dictionary: Dictionary containing data of which to be written to the file in JSON format.
 	"""
-	brickfile.wFileData(ptpdir, path, filename, json.dumps(dictionary), True)
+	scriptfile.wFileData(ptpdir, path, filename, json.dumps(dictionary), True)

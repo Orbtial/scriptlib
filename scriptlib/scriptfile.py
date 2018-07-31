@@ -70,7 +70,7 @@ def gInternalFile(ptpdir, path, question):
 	"""
 	goToPath(ptpdir, path)
 	items = os.listdir()
-	filename = brickui.gList(question, [x for x in items if x[0] != "."], False)
+	filename = scriptui.gList(question, [x for x in items if x[0] != "."], False)
 	print(filename)
 	return filename
 
@@ -86,10 +86,10 @@ def mFile(ptpdir, path, data, filename, fileType):
 	"""
 	goToPath(ptpdir, path)
 	while True:
-		brickui.refresh()
+		scriptui.refresh()
 		filename = input("Name of new file: ")
 		if os.path.exists(filename+fileType):
-			brickui.errorMessage("That file already exists!")
+			scriptui.errorMessage("That file already exists!")
 		else:
 			break
 	wFileData(ptpdir, path, filename+fileType, data, True)
