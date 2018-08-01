@@ -81,7 +81,6 @@ def mFile(ptpdir, path, data, fileType):
 	:param ptpdir: String generated from initPTPDIR().
 	:param path: String representing path to directory containing new file, starting from parent directory of file.
 	:param data: String representing initial text of file created.
-	:param filename: String representing name of file to be created.
 	:param fileType: String representing type extension of file to be created.
 	"""
 	goToPath(ptpdir, path)
