@@ -74,7 +74,7 @@ def gInternalFile(ptpdir, path, question):
 	print(filename)
 	return filename
 
-def mFile(ptpdir, path, data, filename, fileType):
+def mFile(ptpdir, path, data, fileType):
 	"""
 	UI element that allows the user to generate a file with data provided a filename and type extension.
 
@@ -87,7 +87,7 @@ def mFile(ptpdir, path, data, filename, fileType):
 	goToPath(ptpdir, path)
 	while True:
 		scriptui.refresh()
-		filename = input("Name of new file: ")
+		filename = input("Name of new file (exclude extension): ")
 		if os.path.exists(filename+fileType):
 			scriptui.errorMessage("That file already exists!")
 		else:
